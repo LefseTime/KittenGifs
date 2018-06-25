@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+}
+
+.search {
+    margin-top: 1em;
+}
+
+#search-button {
+    background-color: olive;
+}
+
+input {
+    background-color: orange;
+}
