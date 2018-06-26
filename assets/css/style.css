@@ -29,6 +29,10 @@ h3 {
     font-family: 'Fredericka the Great', cursive;
 }
 
+#gifs {
+    max-width: 100%;
+}
+
 input {
     background-color: lemonchiffon;
     margin-right: 1em;
