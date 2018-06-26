@@ -1,5 +1,15 @@
 window.onload = function () {
 
+    let presets = ["Cute","Fluffy","Sleepy","Playful","Massage","Hug","Puppy"];
+    for (i=0; i<presets.length; i++) {
+        let button = $("<button>");
+        button.text(presets[i]);
+        console.log(presets[i]);
+        button.attr("class","category");
+        button.attr("data-search", presets[i]);
+        $(".buttons").append(button);
+    }
+
     //when search button clicked, add new category button
     $("#search-button").on("click", function() {
 
@@ -19,6 +29,8 @@ window.onload = function () {
         newButton.text(searchTerm);
         //append button into .buttons div
         $(".buttons").append(newButton);
+        //clear text from search box
+        $("#search-text").val("");
 
         $(".category").on("click", function () {
 
